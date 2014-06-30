@@ -1,4 +1,4 @@
-<html lang="ru">
+п»ї<html lang="ru">
 <head>
 <meta charset="utf-8">
 </head>
@@ -9,27 +9,33 @@
 var myDate = new Date("1/1/1990");var dayOfMonth = myDate.getDate();var n = 0;
 var month_name=new Array(12);
 /*
-month_name[00]="Января";
-month_name[01]="Февраля";
-month_name[02]="Марта";month_name[03]="Апреля";month_name[04]="Мая";month_name[05]="Июня";
-        month_name[06]="Июля";
-        month_name[07]="Августа";
-        month_name[08]="Сентября";
-        month_name[09]="Октября";
-        month_name[10]="nov";
-        month_name[11]="dec";*/
-/*month_name[01]="one";
-month_name[02]="two";
-month_name[03]="Three";
-month_name[04]="four";
-month_name[05]="five";
-month_name[06]="six";
-month_name[07]="seven";
-month_name[08]="eht";
-month_name[09]="snt";
-month_name[10]="oct";
-month_name[11]="nov";
-month_name[12]="dec";*/
+/russian
+month_name[00]="РЇРЅРІР°СЂСЏ";
+month_name[01]="Р¤РµРІСЂР°Р»СЏ";
+month_name[02]="РњР°СЂС‚Р°";
+month_name[03]="РђРїСЂРµР»СЏ";
+month_name[04]="РњР°СЏ";
+month_name[05]="РСЋРЅСЏ";
+month_name[06]="РСЋР»СЏ";
+month_name[07]="РђРІРіСѓСЃС‚Р°";
+month_name[08]="РЎРµРЅС‚СЏР±СЂСЏ";
+month_name[09]="РћРєС‚СЏР±СЂСЏ";
+month_name[10]="РќРѕСЏР±СЂСЏ";
+month_name[11]="Р”РµРєР°Р±СЂСЏ";*/
+/*
+//english
+month_name[01]="January";
+month_name[02]="February";
+month_name[03]="March";
+month_name[04]="April";
+month_name[05]="May";
+month_name[06]="June";
+month_name[07]="July";
+month_name[08]="August";
+month_name[09]="September";
+month_name[10]="October";
+month_name[11]="November";
+month_name[12]="December";*/
 
 while (n < 15) {
   n++;
@@ -46,7 +52,7 @@ var month=("0" + (myDate.getMonth() + 1)).slice(-2);//Get Month In Two Digits
 //((date.getMonth() + 1) < 10 ? '0' : '') + (date.getMonth() + 1);
 var year = myDate.getFullYear()
   //document.write(myDate+"<br>");
-	document.write(/*n+ //порядковый номер*/"&nbsp;<a href='"+year+""+month+""+day+"'>"+year+'.'+month+'.'+day+"</a> <br>");
+	document.write(/*n+ //РїРѕСЂСЏРґРєРѕРІС‹Р№ РЅРѕРјРµСЂ*/"&nbsp;<a href='"+year+""+month+""+day+"'>"+year+'.'+month+'.'+day+"</a> <br>");
 }
 </script>
 </body>
