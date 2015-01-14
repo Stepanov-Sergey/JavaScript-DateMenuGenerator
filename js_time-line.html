@@ -8,8 +8,7 @@
 //help javascript http://learn.javascript.ru/datetime
 var myDate = new Date("1/1/1990");var dayOfMonth = myDate.getDate();var n = 0;
 var month_name=new Array(12);
-/*
-/russian
+/* russian month name calendar */
 month_name[00]="Января";
 month_name[01]="Февраля";
 month_name[02]="Марта";
@@ -17,11 +16,11 @@ month_name[03]="Апреля";
 month_name[04]="Мая";
 month_name[05]="Июня";
 month_name[06]="Июля";
-month_name[07]="Августа";
+month_name[07]="Автуста";
 month_name[08]="Сентября";
 month_name[09]="Октября";
 month_name[10]="Ноября";
-month_name[11]="Декабря";*/
+month_name[11]="Декабря";
 /*
 //english
 month_name[01]="January";
@@ -46,13 +45,13 @@ while (n < 15) {
 var day =("0" + myDate.getDate()).slice(-2);//Get Date In Two Digits 
 
 											//var month = myDate.getMonth();
-var month=("0" + (myDate.getMonth() + 1)).slice(-2);//Get Month In Two Digits
-
+//var month=("0" + (myDate.getMonth() + 1)).slice(-2);//Get Month In Two Digits
+var month=(myDate.getMonth());//Get Month 1-12
 //var month2d = ((myDate.getMonth() + 1) < 10 ? '0' : '') + (myDate.getMonth() + 1);
 //((date.getMonth() + 1) < 10 ? '0' : '') + (date.getMonth() + 1);
 var year = myDate.getFullYear()
   //document.write(myDate+"<br>");
-	document.write(/*n+ //порядковый номер*/"&nbsp;<a href='"+year+""+month+""+day+"'>"+year+'.'+month+'.'+day+"</a> <br>");
+	document.write(/*n+ //порядковый номер*/"&nbsp;<a href='"+year+""+month+""+day+"'>"+day+' '+month_name[month]+' '+year+"</a> <br>");
 }
 </script>
 </body>
